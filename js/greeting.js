@@ -28,4 +28,4 @@ if (savedName === null) {
 }
 
 // 왜 loginForm을 적지 않아도 실행되는거지 ?_?
-addEventListener("submit", onLoginFormSubmit);
+loginForm.addEventListener("submit", onLoginFormSubmit);
