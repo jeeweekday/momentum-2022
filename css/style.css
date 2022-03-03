@@ -1,6 +1,13 @@
+@import "reset.css";
+
 body {
-    background-color: wheat;
+    color: white;
 }
 .hidden {
     display: none;
+}
+.bg-img {
+    position: absolute;
+    z-index: -10;
+    top: 0;
 }
