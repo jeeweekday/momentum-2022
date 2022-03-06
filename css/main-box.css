@@ -1,0 +1,70 @@
+/* greeting and todo list */
+.main-box {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+}
+.main-box > div {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 49%;
+}
+.login-form__align {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} /* login-form 박스 이벤트시 생기는 class */
+form {
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    height: 60px;
+}
+input, #login-form button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    width: 100%;
+}
+#login-form button {
+    width: 30%;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+#login-greeting {
+    text-align: center;
+    line-height: 65px;
+    letter-spacing: -2px;
+    font-size: 60px;
+}
+#todo-list {
+    /* background-color: yellowgreen; */
+    margin: 10px 20px;
+}
+#todo-list li {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+}
+#todo-list li span {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    font-weight: 600;
+}
+#todo-list li button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 12px;
+    font-style: italic;
+    color: white;
+    letter-spacing: -1px;
+}

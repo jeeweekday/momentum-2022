@@ -2,6 +2,7 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const loginGreeting = document.querySelector("#login-greeting");
+const loginBox = document.querySelector("#login-box")
 
 // 반복되는 str변수는 uppercase로 변수 선언
 const CLASS_HIDDEN = "hidden";
@@ -17,8 +18,9 @@ function onLoginFormSubmit(event) {
     popGreeting(username);
 }
 function popGreeting(name) {
-    loginGreeting.innerText = `Hello ${name} !`;
+    loginGreeting.innerText = `Hello \n ${name} \n Keep going!`;
     loginGreeting.classList.remove(CLASS_HIDDEN);
+    loginBox.classList.add("login-form__align")
 }
 
 if (savedName === null) {
@@ -27,5 +29,4 @@ if (savedName === null) {
     popGreeting(savedName);
 }
 
-// 왜 loginForm을 적지 않아도 실행되는거지 ?_?
 loginForm.addEventListener("submit", onLoginFormSubmit);

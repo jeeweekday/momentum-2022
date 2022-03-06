@@ -1,12 +1,12 @@
 const quotes = [
     {quote: "I never lose. I either win or learn.",
-    author: "Nelson Mandela",},  
+    author: "- NELSON MANDELA",},  
     {quote: "Yesterday You said tomorrow.",
-    author: "NIKE",},  
+    author: "- NIKE",},  
     {quote: "Whoever dose not have two-thirds of his day for himself, is a slave.",
-    author: "Friedrich Nietzsche",},  
-    {quote: "Hahahahaha",
-    author: "Woohyun",},  
+    author: "- FRIEDRICH NIETZSCHE",},  
+    {quote: "My name is ...",
+    author: "- WOOHYUN",},  
 ]
 
 const quote = document.querySelector("#quote span:first-child");

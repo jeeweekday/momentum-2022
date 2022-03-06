@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
 @import "reset.css";
-@import "form.css";
+@import "main-box.css";
 
 * {
     box-sizing: border-box;
 }
 body {
     color: white;
-    /* overflow: hidden; */
+    overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
@@ -20,13 +20,13 @@ body {
 }
 /* box height % */
 .clock-box {
-    height: 20%;
+    height: 25%;
 }
 .main-box {
-    height: 50%;
+    height: 55%;
 }
 #quote {
-    height: 30%;
+    height: 20%;
 }
 /* 배경 스타일 */
 #bg-box {
@@ -54,18 +54,16 @@ body {
     font-size: 80px;
     font-weight: 600;
 }
-.clock-box h2 {
-    /* background-color: rgba(255, 255, 255, 0.1); */
-    /* border-bottom: 2px solid white; */
-}
-/* greeting and todo list */
-.main-box {
-    width: 70vw;
+
+/* quote */
+#quote {
     display: flex;
-    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    font-size: 14px;
+    opacity: 0.8;
 }
-.main-box > div {
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 49%;
+#quote span:last-child {
+    margin-left: 5px;
+    font-size: 12px;
 }
